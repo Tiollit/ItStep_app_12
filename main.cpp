@@ -14,7 +14,8 @@ void main()
 	cin >> k;	
 	switch (k)
 	{
-	case: 1
+	case 1:
+		
 
 	}
 }
