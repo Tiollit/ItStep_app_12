@@ -5,7 +5,7 @@ int Square::S2 = 0;
 int Square::S3 = 0;
 int Square::C = 0;
 int Square::Sqr = 0;
-int Square::Sqro = 0;
+double Square::Sqro = 0;
 int Square::Sqq = 0;
 int Square::Sqt = 0;
 
@@ -50,7 +50,7 @@ int Square::get_Sqt()
     return Sqt;
 }
 
-void Square::set_Sqr(int S1, int S2)
+void Square::set_Sqr()
 {      
     Sqr = S1 * S2;
 
@@ -60,7 +60,7 @@ int Square::get_Sqr()
     return Sqr;
 }
 
-void Square::set_Sqq(int S1)
+void Square::set_Sqq()
 {
     Sqq = S1 * S1;
 
@@ -70,12 +70,12 @@ int Square::get_Sqq()
     return Sqq;
 }
 
-void Square::set_Sqro(int S1, int S2)
+void Square::set_Sqro()
 {
     Sqro = S1 * S1 * sin(S2);
 
 }
-int Square::get_Sqro()
+double Square::get_Sqro()
 {
     return Sqro;
 }
