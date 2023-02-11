@@ -7,7 +7,7 @@ using namespace std;
 void main()
 {	
 	int k, p, t;
-	int S1, S2, S3, Sq, C;
+	int S1, S2, S3, C = 0;
 	bool tr = true;
 	while (tr == true)
 	{
@@ -20,35 +20,42 @@ void main()
 		switch (k)
 		{
 		case 1:
+			
 			cout << "Insert the sides of Triangle: " << endl;
 			cin >> S1 >> S2 >> S3;
-			p = (S1 + S2 + S3) / 2;
-			Sq = sqrt(p * (p - S1) * (p - S2) * (p - S3));
-			cout << "The Square of Triangle is: " << Sq << endl;
-			C += 1;
-			brck;
+			Square::set_S1(S1);
+			Square::set_S2(S2);
+			Square::set_S3(S3);	
+			cout << "The Square of Triangle is: " << Square::get_Sqt() << endl;
+			Square::set_C();
+			break;
 		case 2:
 			cout << "Insert the sides of Rectangle: " << endl;
 			cin >> S1 >> S2;
-			Sq = S1 * S2;
-			cout << "The Square of Rectangle is: " << Sq << endl;
-			C += 1;
+			Square::set_S1(S1);
+			Square::set_S2(S2);			
+			cout << "The Square of Rectangle is: " << Square::get_Sqr() << endl;
+			Square::set_C();
+			break;
 		case 3:
 			cout << "Insert the side of Quadrante: " << endl;
 			cin >> S1;
-			Sq = S1 * S1;
-			cout << "The Square of Quadrante is: " << Sq << endl;
-			C += 1;
-
+			Square::set_S1(S1);			
+			cout << "The Square of Quadrante is: " << Square::get_Sqq() << endl;
+			Square::set_C();
+			break;
 		case 4:
 			cout << "Insert the side and the angle between this sides of Rhombus: " << endl;
-			cin >> S1 >> S2;
-			Sq = S1 * S1 * sin(S2);
-			cout << "The Square of Rectangle is: " << Sq << endl;
-			C += 1;
+			cin >> S1 >> S2;	
+			Square::set_S1(S1);
+			Square::set_S2(S2);
+			cout << "The Square of Rectangle is: " << Square::get_Sqro() << endl;
+			Square::set_C();
+			break;
 		}
-		cout << "If You want to calculate the Square of another figure press 1, if want to end press 0: " << endl;
+		cout << "if want to end press 0: " << endl;
 		cin >> t;
 		if (t == 0) tr = false;
 	}
+	cout << "Total number of operations is: " << Square::get_C();
 }
