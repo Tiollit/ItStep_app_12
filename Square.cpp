@@ -1,36 +1,45 @@
 #include "Square.h"
 
-int Square::set_S1(int s1)
+int Square::S1 = 0;
+int Square::S2 = 0;
+int Square::S3 = 0;
+int Square::C = 0;
+int Square::Sqr = 0;
+int Square::Sqro = 0;
+int Square::Sqq = 0;
+int Square::Sqt = 0;
+
+void Square::set_S1(int s1)
 {
   S1 = s1;
-  return S1;
+  
 }
 int Square::get_S1()
 {
     return S1;
 }
 
-int Square::set_S2(int s2)
+void Square::set_S2(int s2)
 {
    S2 = s2;
-   return S2;
+  
 }
 int Square::get_S2()
 {   
         return S2;   
 }
 
-int Square::set_S3(int s3)
+void Square::set_S3(int s3)
 {
    S3 = s3;
-   return S3;
+ 
 }
 int Square::get_S3()
 {    
         return S3;    
 }
 
-void Square::set_Sqt(int S1, int S2, int S3)
+void Square::set_Sqt()
 {    
     int p = (S1 + S2 + S3) / 2;
     Sqt = sqrt(p * (p - S1) * (p - S2) * (p - S3));
