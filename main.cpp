@@ -20,6 +20,7 @@ void main()
 		case 1:
 			cout << "Insert the sides of Triangle: " << endl;
 			cin >> S1 >> S2 >> S3;
+			
 
 
 
