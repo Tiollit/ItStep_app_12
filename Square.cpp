@@ -26,3 +26,21 @@ int Square::get_S3()
 {    
         return S3;    
 }
+
+int Square::set_Sq(int Sq)
+{
+    Sq = Sq;
+}
+int Square::get_Sq()
+{
+    return Sq;
+}
+
+int Square::set_C(int C)
+{
+    C = 0;
+}
+int Square::get_C()
+{
+    return C;
+}
