@@ -6,6 +6,7 @@ using namespace std;
 void main()
 {
 	int k;
+	int S1, S2, S3;
 	bool tr = true;
 	while (tr == true)
 	{
