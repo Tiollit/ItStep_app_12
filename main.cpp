@@ -11,6 +11,10 @@ void main()
 	cout << " 2 for Rectangle," << endl;
 	cout << " 3 for Quadrante," << endl;
 	cout << " 4 for Rhombus," << endl;
-	cin >> k;
-	switch(k)
+	cin >> k;	
+	switch (k)
+	{
+	case: 1
+
+	}
 }
