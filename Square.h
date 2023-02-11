@@ -3,15 +3,12 @@ using namespace std;
 
 class Square {
 public:
-    int Triangle, Rectangle, Quadrate, Rhombus;
+    int S1, S2, S3;
 
-    static void set_Triangle(int Triangle);
-    int get_Triangle();
-    static void set_Rectangle(int Rectangle);
-    int get_Rectangle();
-    static void set_Quadrate(int Quadrate);
-    int get_Quadrate();
-    static void set_Rhombus(int Rhombus);
-    int get_Rhombus();
-    
+    static int set_S1(int S1);
+    int get_S1();
+    static int set_S2(int S2);
+    int get_S2();
+    static int set_S2(int S3);
+    int get_S3();    
 };

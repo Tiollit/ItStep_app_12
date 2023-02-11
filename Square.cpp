@@ -1,37 +1,28 @@
 #include "Square.h"
 
-void Square::set_Triangle(int Triangle)
+void Square::set_S1(int S1)
 {
-    this->Triangle = Triangle;
+    this->S1 = S1;
 }
-int Square::get_Triangle()
+int Square::get_S1()
 {
-    return Triangle;
+    return S1;
 }
 
-void Square::set_Rectangle(int Rectangle)
+void Square::set_S2(int S2)
 {
-    this->Rectangle = Rectangle;
+    this->S2 = S2;
 }
-int Square::get_Rectangle()
+int Square::get_S2()
 {   
-        return Rectangle;   
+        return S2;   
 }
 
-void Square::set_Quadrate(int Quadrate)
+void Square::set_S3(int S3)
 {
-    this->Quadrate = Quadrate;
+    this->S3 = S3;
 }
-int Square::get_Quadrate()
+int Square::get_S3()
 {    
-        return Quadrate;    
-}
-
-void Square::set_Rhombus(int Rhombus)
-{
-    this->Rhombus = Rhombus;
-}
-int Square::get_Rhombus()
-{
-    return Rhombus;
+        return S3;    
 }
